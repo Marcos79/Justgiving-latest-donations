@@ -1,0 +1,106 @@
+@mixin specs {
+  float: right;
+  font-size: x-large;
+  margin-right: 10px;
+  margin-top: 20px;
+  color: #ad29b6;
+}
+
+@mixin style {
+  font-weight: bolder;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+  color: green;
+  font-size: 40px;
+}
+
+@mixin style2 {
+  font-size: 15px;
+  font-style: bolder;
+  background-color: #d3d3d3;
+}
+
+.Title {
+  font-size: 40px;
+  color: green;
+}
+
+.bar {
+  background-color: yellow;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  max-width: fit-content;
+  max-height: 500px;
+  position: relative;
+}
+
+.donate {
+  @include specs;
+  float: middle;
+  background-color: white;
+}
+
+.logo {
+  width: 15%;
+  height: 10%;
+  background-color: yellow;
+}
+
+.home {
+  @include specs;
+}
+.contacts {
+  @include specs;
+}
+
+.about {
+  @include specs;
+}
+
+.latest {
+  @include style;
+}
+
+.latestDonor {
+  padding: 60px;
+}
+
+.donation {
+  font-size: 20px;
+  margin-left: 10px;
+  padding-right: 5px;
+  background-color: #d3d3d3;
+}
+
+.donationButton {
+  color: rgb(71, 1, 71);
+  font-size: 20px;
+  margin-left: 10px;
+  padding-right: 5px;
+  background-color: green;
+}
+
+.donationContents {
+  @include style2;
+}
+
+.donorName {
+  @include style;
+  font-size: 20px;
+  color: black;
+}
+
+.donorAmount {
+  @include style;
+  font-size: 20px;
+  color: #006400;
+}
+
+.donorDescription {
+  @include style;
+  font-size: 18px;
+  color: black;
+}
